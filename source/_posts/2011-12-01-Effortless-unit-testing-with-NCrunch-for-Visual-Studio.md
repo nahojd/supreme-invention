@@ -38,7 +38,6 @@ All green here as well! Great, let’s move on. Wasn’t the Bar method supposed
 
 [![black dot](/images/Windows-Live-Writer/9b5b0960a0ac_14132/black%20dot_thumb.png "And there, the very useful method is done! Feel free to use it in your own projects!")](/images/Windows-Live-Writer/9b5b0960a0ac_14132/black%20dot.png)
 
-Now I have a black dot! This means that this particular line is not covered by any tests at all! Bad TDD-Johan!  
+Now I have a black dot! This means that this particular line is not covered by any tests at all! Bad TDD-Johan!
 
 I think I’ll end my example there. I’ve been using NCrunch for a few weeks now, and I love it! It just makes the test running completely effortless. And whenever I have to back and refactor some old code it makes it very easy to find out what tests are covering it (if any). The only possible downside is that you do need a pretty fast computer for it to run, preferably a quad core.
-<div style="margin: 0px; padding: 0px; float: none; display: inline;" id="scid:0767317B-992E-4b12-91E0-4F059A8CECA8:8612c010-bb21-42ad-999f-d9121895e132" class="wlWriterEditableSmartContent">Tags: [tdd](/tags/tdd), [test](/tags/test), [ncrunch](/tags/ncrunch), [tools](/tags/tools), [visual studio](/tags/visual+studio)</div>

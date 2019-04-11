@@ -19,4 +19,3 @@ Luckily, it turns out there's an easy way to restore law and order to the galaxy
 `$ sudo apt-get remove firefox-globalmenu`
 
 And just like that, the Firefox button is back, and the menus in the top bar are gone!
-<div style="margin: 0px; padding: 0px; float: none; display: inline;" id="scid:0767317B-992E-4b12-91E0-4F059A8CECA8:827706e6-5d9c-48be-8814-a960b0317aec" class="wlWriterEditableSmartContent">Tags: [ubuntu](/tags/ubuntu), [firefox](/tags/firefox), [unity](/tags/unity)</div>

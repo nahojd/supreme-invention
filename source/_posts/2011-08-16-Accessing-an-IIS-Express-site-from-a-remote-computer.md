@@ -16,12 +16,11 @@ Sometimes (waaaay to often) I have to check that a site I’m working on looks l
 
 Normally when you run an application in IIS Express, it’s only accessible on http://localhost:[someport]. In order to access it from another machine, it needs to be bound to your public IP address as well. Open* D:\Users[YourName]\Documents\IISExpress\config\applicationhost.config *and find your site.
 
-**UPDATE FOR VISUAL STUDIO 2015: **As was pointed out to me in a comment by Søren Nielsen, in Visual Studio 2015 the IIS Express configuration files have moved. They are now separate per project, and stored in * /{project folder}/.vs/config/applicationhost.config*. Which is much better, in my opinion, just don't forget to add .vs/ to your *.gitignore/.hgignore* files!
+**UPDATE FOR VISUAL STUDIO 2015:** As was pointed out to me in a comment by Søren Nielsen, in Visual Studio 2015 the IIS Express configuration files have moved. They are now separate per project, and stored in */{project folder}/.vs/config/applicationhost.config*. Which is much better, in my opinion, just don't forget to add .vs/ to your *.gitignore/.hgignore* files!
 
 You will find something like this:
 
-
-``` xml 
+``` xml
 <site name="Alpha.Web" id="2">
     <application path="/">
         <virtualDirectory path="/" physicalPath="C:\Users\Johan\HgReps\Alpha\Alpha.Web" />
@@ -30,12 +29,9 @@ You will find something like this:
         <binding protocol="http" bindingInformation="*:58938:localhost" />
     </bindings>
 </site>
-
 ```
 
-
-
-In <bindings>, add another row:
+In `<bindings>`, add another row:
 
 `<binding protocol="http" bindingInformation="*:58938:192.168.1.42" />` (But with your IP, and port number, of course)
 
@@ -52,4 +48,3 @@ This just tells http.sys that it’s ok to talk to this url.
 This adds a rule in the Windows Firewall, allowing incoming connections to port 58938 for computers on your local subnet.
 
 And there you go, you can now press Ctrl-F5 in Visual Studio, and browse you site from another computer!
-<div id="scid:0767317B-992E-4b12-91E0-4F059A8CECA8:c72d3530-3445-44fa-98f8-bf60076e5b5e" class="wlWriterEditableSmartContent" style="margin: 0px; padding: 0px; float: none; display: inline;">Tags: [iis express](../tags/iis+express), [visual studio](../tags/visual+studio), [asp.net](../tags/asp.net), [internet explorer](../tags/internet+explorer)</div>

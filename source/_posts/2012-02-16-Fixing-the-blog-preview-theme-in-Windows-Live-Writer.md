@@ -14,14 +14,13 @@ However, since I changed the theme of my blog recently, something went awry with
 
 [![before](/images/Windows-Live-Writer/9d9296b0015a_7A42/before_thumb.png "before")](/images/Windows-Live-Writer/9d9296b0015a_7A42/before_2.png)
 
-You’ll have to excuse the GUI being in Swedish, the computer I took the screenshot on came preinstalled with Swedish, and I although I’ve changed the system language to English, I’ve yet to find a way to change the language in Live Writer… Anyway, as you can see, it’s not optimal if you want to see what you’re writing. 
+You’ll have to excuse the GUI being in Swedish, the computer I took the screenshot on came preinstalled with Swedish, and I although I’ve changed the system language to English, I’ve yet to find a way to change the language in Live Writer… Anyway, as you can see, it’s not optimal if you want to see what you’re writing.
 
 I suppose I could change the Html of my blog, but there’s really nothing wrong with it, I would rather not change it just because Live Writer can’t interpret it correctly. Luckily, there’s another way. The theme files that Live Writer generates gets stored in `C:\Users\{username}\AppData\Roaming\Windows Live Writer\blogtemplates`. In this folder, there are some more folders with Guid-names. You just have to figure out which one is the correct one. In my case it’s easy, since I just have one blog setup.
 
 Inside the Guid-named folder, you’ll find and index.html file, along with some images and other stuff. When I opened the index.htm file, it looked like this:
 
-
-``` xml 
+``` xml
 <!DOCTYPE html><!-- saved from url=(0025)/ -->
 
 <HTML lang="en"><HEAD><TITLE>All posts -- Johan Driessen's blog</TITLE>
@@ -32,15 +31,11 @@ Inside the Guid-named folder, you’ll find and index.html file, along with some
 <meta http-equiv="CONTENT-TYPE" content="text/html; utf-8"></HEAD>
 <BODY>
 <DIV id="container"><H1><A href="/">{post-title}</A></H1>{post-body}</DIV></BODY></HTML>
-
 ```
-
-
 
 Aha, lots of elements missing around the post. So I changed the important part to this:
 
-
-``` xml 
+``` xml
 <DIV id="container">
 <section id="main">
     <article class="post">
@@ -51,14 +46,10 @@ Aha, lots of elements missing around the post. So I changed the important part t
     </article>
 </section>
 </DIV>
-
 ```
-
-
 
 And after restarting Windows Live Writer, it looks like this instead:
 
 [![after](/images/Windows-Live-Writer/9d9296b0015a_7A42/after_thumb.png "after")](/images/Windows-Live-Writer/9d9296b0015a_7A42/after_2.png)
 
 Changing the html code in index.htm fixes the appearance of the Edit mode. In order to fix the appearance of the Preview mode, I had to change the index[1].htm file as well, but I just pasted the same html there, and everything looked as it should!
-<div style="margin: 0px; padding: 0px; float: none; display: inline;" id="scid:0767317B-992E-4b12-91E0-4F059A8CECA8:3c0dd7ba-2d11-4c47-83a3-bed3aa894974" class="wlWriterEditableSmartContent">Tags: [blogging](/tags/blogging), [windows live writer](/tags/windows+live+writer)</div>

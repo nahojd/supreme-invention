@@ -12,15 +12,14 @@ As I wrote in a post back in October, I’ve been writing my own blog engine, wi
 
 A quick overview of the Alpha Blog Engine:
 
-*   Built in [ASP.NET MVC 3 with Razor](http://www.asp.net/mvc/mvc3)
-*   .NET 4 only
-*   [RavenDB](http://ravendb.net/) (that’s right, [no SQL](http://en.wikipedia.org/wiki/NoSQL) here!)
-*   [MetaWeblog API](http://www.xmlrpc.com/metaWeblogApi)
-*   Makes heavy use of third part libraries, e.g. [Elmah](http://code.google.com/p/elmah/), [FluentValidation](http://fluentvalidation.codeplex.com/), [StructureMap](http://structuremap.net/structuremap/), [Xml-Rpc.Net](http://www.xml-rpc.net/), [jQuery](http://jquery.com/), [HTML Agility Pack](http://htmlagilitypack.codeplex.com/), and [Argotic](http://argotic.codeplex.com/). Everything handled by [NuGet](http://nuget.codeplex.com/).
-*   Lightweight, i.e. no built-in comment function (uses [Disqus](http://disqus.com/) instead)
-*   HTML5, built on [Html5 Boilerplate](http://html5boilerplate.com/).
+* Built in [ASP.NET MVC 3 with Razor](http://www.asp.net/mvc/mvc3)
+* .NET 4 only
+* [RavenDB](http://ravendb.net/) (that’s right, [no SQL](http://en.wikipedia.org/wiki/NoSQL) here!)
+* [MetaWeblog API](http://www.xmlrpc.com/metaWeblogApi)
+* Makes heavy use of third part libraries, e.g. [Elmah](http://code.google.com/p/elmah/), [FluentValidation](http://fluentvalidation.codeplex.com/), [StructureMap](http://structuremap.net/structuremap/), [Xml-Rpc.Net](http://www.xml-rpc.net/), [jQuery](http://jquery.com/), [HTML Agility Pack](http://htmlagilitypack.codeplex.com/), and [Argotic](http://argotic.codeplex.com/). Everything handled by [NuGet](http://nuget.codeplex.com/).
+* Lightweight, i.e. no built-in comment function (uses [Disqus](http://disqus.com/) instead)
+* HTML5, built on [Html5 Boilerplate](http://html5boilerplate.com/).
 
-It’s built to be the perfect blog platform for a technical blogger, assuming that you can run it on a Windows Server, that is. Making it able to run on [Mono](http://www.mono-project.com/Main_Page) is on my to-do-list, though. 
+It’s built to be the perfect blog platform for a technical blogger, assuming that you can run it on a Windows Server, that is. Making it able to run on [Mono](http://www.mono-project.com/Main_Page) is on my to-do-list, though.
 
 If anyone is interested, the source is available on bitbucket: [https://bitbucket.org/nahojd/alpha/overview](https://bitbucket.org/nahojd/alpha/overview "https://bitbucket.org/nahojd/alpha/overview")
-<div style="margin: 0px; padding: 0px; float: none; display: inline;" id="scid:0767317B-992E-4b12-91E0-4F059A8CECA8:9048b434-5998-4971-b38a-e4e46c4e4669" class="wlWriterEditableSmartContent">Tags: [alpha](/tags/alpha), [blogging](/tags/blogging)</div>

@@ -19,5 +19,3 @@ If you right-click on a config transformation file, you get the "Preview transfo
 [![Click me if you can't read! :-)](/images/preview-transform-thumbnail.png)](/images/preview-transform.png)
 
 All the differences between the files are highlighted on the right, and also in the code window itself. This really makes it very easy to verify that the transforms are correct.
-
-Tags: [visual studio](../tags/visual studio), [asp.net](../tags/asp.net), [continuous delivery](../tags/continuous delivery)

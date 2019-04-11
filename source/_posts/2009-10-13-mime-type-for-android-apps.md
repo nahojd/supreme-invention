@@ -14,4 +14,3 @@ It turns out that the correct mime type for an .apk file is
 `application/vnd.android.package-archive`
 
 You also need to change the settings to allow installation of programs that doesn’t come from [Android Market](http://www.android.com/market/). This setting is found in* Settings > Program*, and is probably called “*Unknown sources*” in English (it is definitely called “Okända källor” in Swedish).
-  <div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:0767317B-992E-4b12-91E0-4F059A8CECA8:9e5398a7-d55a-4942-9587-e3f0e92e5d92" class="wlWriterEditableSmartContent">Tags: [android](/tags/android)</div>

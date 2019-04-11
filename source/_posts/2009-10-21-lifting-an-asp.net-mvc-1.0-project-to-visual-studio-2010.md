@@ -19,10 +19,9 @@ I used the application and converted my 1.0 project to 2.0. Then I opened the pr
 
 In conclusion, to get your VS2008/ASP.NET MVC 1.0 project to work in Visual Studio 2010, follow these steps:
 
-1.  Upgrade the project to ASP.NET MVC 2, preferably using [Eilon Lipton’s migration tool](http://weblogs.asp.net/leftslipper/archive/2009/10/19/migrating-asp-net-mvc-1-0-applications-to-asp-net-mvc-2.aspx). 
-2.  Open the project in Visual Studio 2010, and let the conversion wizard work its magic. 
-3.  ?? 
-4.  Profit!   
+1. Upgrade the project to ASP.NET MVC 2, preferably using [Eilon Lipton’s migration tool](http://weblogs.asp.net/leftslipper/archive/2009/10/19/migrating-asp-net-mvc-1-0-applications-to-asp-net-mvc-2.aspx). 
+2. Open the project in Visual Studio 2010, and let the conversion wizard work its magic. 
+3. ?? 
+4. Profit!   
 
 *Update: Turns out that Phil Haack wrote a [post describing this](http://haacked.com/archive/2009/10/20/vs10beta2-and-aspnetmvc.aspx) sometime between my attempts to get it working yesterday evening and my writing of this post this morning.*
-  <div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:0767317B-992E-4b12-91E0-4F059A8CECA8:5cb7fe1a-1bfb-444a-b3f9-84a131903f08" class="wlWriterEditableSmartContent">Tags: [asp.net](/tags/asp.net), [asp.net mvc](/tags/asp.net%20mvc), [visual studio](/tags/visual%20studio)</div>

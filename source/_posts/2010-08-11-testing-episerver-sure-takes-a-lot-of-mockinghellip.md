@@ -10,9 +10,8 @@ tags: [episerver, tdd]
 A quick follow up to [my last post](/archive/2010/08/11/unit-testing-saving-pages-in-episerver-cms-6.aspx). Even with [EPiAbstractions](http://github.com/joelabrahamsson/EPiAbstractions), testing takes **a lot** of mocking and setup code…
 
 Testing this
-  
 
-``` csharp 
+``` csharp
 public void CreateOrtkoppling( int verksamhetsId )
 {
     var ortContainer = GetOrtContainer() ?? CreateOrtContainer();
@@ -40,16 +39,9 @@ private void CreateVerksamhetPage( PageData ortContainer, int verksamhetsId )
 }
 ```
 
-
-
-
-
 took me this much code:
 
-
-
-
-``` csharp 
+``` csharp
 private Mock<IDataFactoryFacade> dataFactoryMock;
 private Mock<IVerksamhetRepository> verksamhetRepositoryMock;
 private Mock<PagePropertyUtils> pagePropertyUtilsMock;
@@ -68,7 +60,7 @@ public void Setup()
     dataFactoryMock = new Mock<IDataFactoryFacade>();
     dataFactoryMock.Setup( d => d.GetPage( It.Is<PageReference>( p => p.ID == utbildningsPageId ) ) )
         .Returns( utbildningsPage );
-    utbildning = new UtbildningPageHandler( dataFactoryMock.Object, verksamhetRepositoryMock.Object, pagePropertyUtilsMock.Object, 
+    utbildning = new UtbildningPageHandler( dataFactoryMock.Object, verksamhetRepositoryMock.Object, pagePropertyUtilsMock.Object,
         pageReferenceMock.Object, utbildningsPageId );
 }
 
@@ -138,11 +130,4 @@ public void CreateOrtkoppling_Will_Create_Page_And_Save_VerksamhetsId_As_Propert
 }
 ```
 
-
-
-
-
 Now, most of that code (everything except for the actual test) is reused in other tests, but still! It’s a bit exhausting!
-
-
-<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:0767317B-992E-4b12-91E0-4F059A8CECA8:f8c4448c-a559-49fa-b0b3-12ef18ded15f" class="wlWriterEditableSmartContent">Tags: [episerver](/tags/episerver), [tdd](/tags/tdd)</div>

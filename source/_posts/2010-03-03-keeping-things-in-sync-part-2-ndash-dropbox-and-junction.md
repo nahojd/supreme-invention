@@ -15,23 +15,20 @@ Live Writer stores its data (posts and drafts) in a a folder called “My Weblog
 
 Wait, there is! Junction to the rescue! As it turns out, Windows (or rather NTFS) has been supporting directory symbolic links, or symlinks, since Windows 2000. A symbolic links is an alias for a directory in a different location, and to applications there is no difference between symbolic links and the actual directory. Unfortunately, there is no built-in tool for creating or managing these in Windows. There is, however, a free downloadable tool, called [Junction](http://technet.microsoft.com/en-us/sysinternals/bb896768.aspx).
 
-So, here is what I did: 
+So, here is what I did:
 
-1.  I created a folder in My Dropbox called “Apps”, and under that I created a folder called “My Weblog Posts”. 
-2.  I moved all the content from “Documents\My Weblog Posts” to “My Dropbox\Apps\My Weblog Posts”. 
-3.  I deleted “Documents\My Weblog Posts”. 
-4.  I opened a command window, and executed the following command      
+1. I created a folder in My Dropbox called “Apps”, and under that I created a folder called “My Weblog Posts”.
+2. I moved all the content from “Documents\My Weblog Posts” to “My Dropbox\Apps\My Weblog Posts”.
+3. I deleted “Documents\My Weblog Posts”.
+4. I opened a command window, and executed the following command
 
-    ``` plain 
+``` plain
 > junction.exe "C:\Users\Johan\Documents\My Weblog Posts"
     "C:\Users\Johan\Documents\My Dropbox\Apps\My Weblog Posts"
 ```
 
-And voilà, I now have a symlink in my Documents folder, pointing to the folder in My Dropbox. Rinse, and repeat this on my laptop, and suddenly my drafts are available on both! 
+And voilà, I now have a symlink in my Documents folder, pointing to the folder in My Dropbox. Rinse, and repeat this on my laptop, and suddenly my drafts are available on both!
 
 This is, of course, not only useable for Windows Live Writer, but for all applications that keep its data files in some unconfigurable folder somewhere, that you would like to have available on multiple computers.
 
 Hmmm, maybe I should get back to writing that WF4 tutorial now…
-
-
-<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:0767317B-992E-4b12-91E0-4F059A8CECA8:670b62a5-c111-41f7-89cf-9980cc53d924" class="wlWriterEditableSmartContent">Tags: [dropbox](/tags/dropbox), [windows 7](/tags/windows%207), [blogging](/tags/blogging)</div>

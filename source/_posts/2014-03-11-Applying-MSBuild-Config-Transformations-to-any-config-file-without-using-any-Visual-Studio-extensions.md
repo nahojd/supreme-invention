@@ -18,62 +18,44 @@ Then, create an App.config file in your project. I placed in in a folder called 
 
 Next, unload your project, and edit the .csproj file. First we'll fix the linking of the files. This is done simply by adding a DependentUpon element inside each Item. Let's say you have this:
 
-
-``` xml 
+``` xml
 <None Include="Config\App.config" />
 <None Include="Config\App.Debug.config" />
-
 ```
-
-
 
 Simply change it to this:
 
-
-``` xml 
+``` xml
 <None Include="Config\App.config" />
 <None Include="Config\App.Debug.config">
   <DependentUpon>App.config</DependentUpon>
 </None>
-
 ```
-
-
 
 Now, let's move on the real trick. In order to make msbuild transform your config file, we need to att a build event. At the end of the file, add
 
-
-``` xml 
-<UsingTask TaskName="TransformXml"   
+``` xml
+<UsingTask TaskName="TransformXml"
            AssemblyFile="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v12.0\Web\Microsoft.Web.Publishing.Tasks.dll" />
 <Target Name="AfterBuild">
   <TransformXml Source="Config\App.config"
                 Transform="Config\App.$(Configuration).config"
                 Destination="$(OutputPath)\$(AssemblyName).$(OutputType).config" />
 </Target>
-
 ```
 
-
-
-You need to make sure that the path in the second import matches the version of your Visual Studio build targets. 
+You need to make sure that the path in the second import matches the version of your Visual Studio build targets.
 
 In this example, I have a console application, so I want the result of my transformation to end up in the output directory, and be named as AssemblyName.exe.config, e.g. bin\Debug\MyConsoleApplication.exe.config. In a web application where I have other config files, I would use something like
 
-
-``` xml 
+``` xml
 <TransformXml Source="Config\NLog.config"
               Transform="Config\NLog.$(Configuration).config"
               Destination="NLog.config" />
-
 ```
-
-
 
 ![](/images/johan_driessen_se/WindowsLiveWriter/PersistanceinWF4beta2_E4AD/works-on-my-machine-starburst_thumb.png)And if you have more than one config file that you would like transformed, you can of course add several TransformXml-lines. After you're done, just reload the project, and hopefully everything works. At least it works on my machine!
 
 Finally, I should add that I found another Visual Studio extension that seems to work better than SlowCheetah (at least sometimes) called [Configuration Transform](http://visualstudiogallery.msdn.microsoft.com/579d3a78-3bdd-497c-bc21-aa6e6abbc859) and make this entire post unnessecary. On the other hand, this way there is less magic and more control, which I personally like. And if your extension suddenly breaks after an update, it might come handy!
 
 *UPDATE 2014-03-20 *-- I realised that unless your destination file is included in the project, or rather has a suitable Build Action, it will not be included in the deploy package, or deployed at all. Usually the build action should be "Content". You don't have to worry about the content of the destination file, though, as it will be replaced on every build. I prefer not to have it checked in to source control, though, since it would be pretty pointless to check in every change to an auto-generated file.
-
-Tags: [visual studio](/Post/tags/visual%20studio), [msbuild](/Post/tags/msbuild), [teamcity](/Post/tags/teamcity), [continuous delivery](/Post/tags/continuous+delivery)

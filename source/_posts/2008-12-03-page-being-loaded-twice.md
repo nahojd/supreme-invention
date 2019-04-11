@@ -9,9 +9,8 @@ tags: [asp.net]
 
 *This post was originally published on [http://labs.dropit.se/blogs](http://labs.dropit.se/blogs). *
 
-Ever had the problem of pages being loaded twice, that is that all the events are being hit two times? 
+Ever had the problem of pages being loaded twice, that is that all the events are being hit two times?
 
-I have, and I've never really been able to figure out why, but I recently stumbled over [this old entry](http://aspnetresources.com/blog/page_events_raised_twice.aspx) at ASP.NET Resources. It seems that it is a problem with AutoEventWireup, or rather it is a problem if you use both AutoEventWireup *and *wire the events in the codebehind as well. You can read the full story on ASP.NET Resources, but it seems that it is obviously very important to be consistent in your choice of using AutoEventWireup or overriding the methods, and *not *using both of them! 
+I have, and I've never really been able to figure out why, but I recently stumbled over [this old entry](http://aspnetresources.com/blog/page_events_raised_twice.aspx) at ASP.NET Resources. It seems that it is a problem with AutoEventWireup, or rather it is a problem if you use both AutoEventWireup *and *wire the events in the codebehind as well. You can read the full story on ASP.NET Resources, but it seems that it is obviously very important to be consistent in your choice of using AutoEventWireup or overriding the methods, and *not *using both of them!
 
-I know we have this problem in our current project, so I guess I'd better track down all Page_Something-methods and AutoEventWireups and turn them off. Seems to be the easiest way to get rid of this. 
-  <div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:0767317B-992E-4b12-91E0-4F059A8CECA8:513dd6a9-c52f-4b4e-822e-fb845148c3c5" class="wlWriterSmartContent">Tags: [asp.net](/tags/asp.net)</div>
+I know we have this problem in our current project, so I guess I'd better track down all Page_Something-methods and AutoEventWireups and turn them off. Seems to be the easiest way to get rid of this.
