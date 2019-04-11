@@ -22,12 +22,19 @@ input, button
        url(font-icon-path + ".ttf?v=#" + font-icon-version) format("truetype"),
        url(font-icon-path + ".svg#fontawesomeregular?v=#" + font-icon-version) format("svg")
 
+@font-face
+  font-family: Fira Code
+  font-style: normal
+  font-weight: 400
+  src: url(font-mono-path + ".woff2?v=#" + font-mono-version) format("woff2"),
+       url(font-mono-path + ".woff?v=#" + font-mono-version) format("woff"),
+
 html, body, #container
   height: 100%
 
 body
   background: color-background
-  font: font-size font-sans
+  font: font-size font-serif
   -webkit-text-size-adjust: 100%
 
 .outer

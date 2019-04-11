@@ -18,6 +18,8 @@
 #header-outer
   height: 100%
   position: relative
+  a
+    background: #000 content-box
 
 #header-inner
   position: relative
@@ -43,7 +45,7 @@
 
 $logo-text
   text-decoration: none
-  color: #fff
+  color: color-content-background
   font-weight: 300
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
 
@@ -68,8 +70,8 @@ $logo-text
 
 $nav-link
   float: left
-  color: #fff
-  opacity: 0.6
+  color: color-content-background
+  opacity: 0.75
   text-decoration: none
   text-shadow: 0 1px rgba(0, 0, 0, 0.2)
   transition: opacity 0.2s
@@ -135,7 +137,7 @@ $nav-link
   top: 0
   left: 0
   right: 0
-  background: #fff
+  background: color-content-background
   padding: 5px 15px
   border-radius: 15px
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)

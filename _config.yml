@@ -4,14 +4,22 @@
 
 # Site
 title: Johan Driessen
-subtitle: Messing around with stuff I like
+subtitle: Programming, old tech and other stuff that interest me
 description:
 keywords:
 author: Johan Driessen
+author_info: "My name is Johan Driessen. I work as a consultant and developer at Approach. These are good way to get in touch with me:"
 language:
 timezone:
 
 disqus_shortname: johansblog
+
+contact:
+  twitter: nahojd
+  github: nahojd
+  linkedin: johandriessen
+  facebook: johan.driessen
+  stackoverflow: 134935/johan-driessen
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
