@@ -54,7 +54,9 @@ In this example, I have a console application, so I want the result of my transf
               Destination="NLog.config" />
 ```
 
-![](/images/johan_driessen_se/WindowsLiveWriter/PersistanceinWF4beta2_E4AD/works-on-my-machine-starburst_thumb.png)And if you have more than one config file that you would like transformed, you can of course add several TransformXml-lines. After you're done, just reload the project, and hopefully everything works. At least it works on my machine!
+<img src="/images/johan_driessen_se/WindowsLiveWriter/PersistanceinWF4beta2_E4AD/works-on-my-machine-starburst_thumb.png" class="right" />
+
+And if you have more than one config file that you would like transformed, you can of course add several TransformXml-lines. After you're done, just reload the project, and hopefully everything works. At least it works on my machine!
 
 Finally, I should add that I found another Visual Studio extension that seems to work better than SlowCheetah (at least sometimes) called [Configuration Transform](http://visualstudiogallery.msdn.microsoft.com/579d3a78-3bdd-497c-bc21-aa6e6abbc859) and make this entire post unnessecary. On the other hand, this way there is less magic and more control, which I personally like. And if your extension suddenly breaks after an update, it might come handy!
 

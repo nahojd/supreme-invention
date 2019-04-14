@@ -4,6 +4,9 @@
   <% if (page.permalink){ %>
   var disqus_url = '<%= page.permalink %>';
   <% } %>
+  <% if (page.extid) { %>
+  var disqus_identifier = '<%= page.extid %>';
+  <% } %>
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';

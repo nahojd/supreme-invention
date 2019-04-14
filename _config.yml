@@ -89,7 +89,7 @@ theme: landscape
 feed:
   type: rss2
   path: feed/rss.xml
-  limit: 0
+  limit: 15
   hub:
   content: true
 #  content_limit: 140
