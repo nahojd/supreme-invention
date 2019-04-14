@@ -83,6 +83,9 @@ if sidebar is left
     #main
       float: right
 
+#main.fullwidth
+    width: "calc(%s - (.5 * %s))" % (total-width gutter-width)
+
 @import "_extend"
 @import "_partial/header"
 @import "_partial/article"
@@ -94,3 +97,23 @@ if sidebar is left
 
 if sidebar
   @import "_partial/sidebar"
+
+
+//Lösenfras
+#fras
+  background-color: #fff3ad
+  width: 100%
+  border: 0
+  overflow: hidden
+  font-size: 1.5em
+  height: 1.2em
+
+aside.info
+  font-size: 70%
+  padding: 0 1em
+  border: 1px solid #ccc
+  box-shadow: #ccc inset 2px 2px 3px
+  color: #666
+
+aside.info h2
+  margin: 0.8em 0
