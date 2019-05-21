@@ -3,6 +3,7 @@ title: Repairing a cracked PCB in a Commodore 1901 monitor
 author: johan
 date: 
 tags: [retro computing]
+categories: [retro computing]
 ---
 
 This is the second and final part in a very short series where I improve and repair my Commodore 1901 monitor. In part 1 I added a SCART connector with analog RGB and audio support, but also discovered that the colours were a bit off, and discovered a crack on the PCB. In this part, I will repair the PCB and hopefully fix the colours.
@@ -18,3 +19,9 @@ That doesn't look too fucking good. No less than nine (9) traces are broken. For
 For the rest of the broken traces, there just wasn't enough room to use this method, at least not with the tools and skill at my disposal. So I had to solder wires over the rest of the cracks.
 
 {% asset_img PCB_fully_repaired.jpg "Looks like a nest of snakes... " %}
+
+_I really need to finish this post soon!!_
+
+Finally, here is a picture of my five year old son playing Krakout II on the repaired monitor!
+
+{% asset_img boy_playing_krakout_ii_on_c64_and_commodore_1901.jpg "Some games never get old! Unfortunately, the improved colours does not show at all in this image..." %}

@@ -7,8 +7,6 @@ tags:
 author: johan
 date: 2019-05-04 23:21:58
 ---
-
-
 So, this post is going to be a departure from most of the previous content on this blog. This may or may not be indicative of future posts.
 
 A couple of months ago, I bought a cheap, used Commodore 1901 monitor[^1] from Tradera. The Commodore 1901 has digital RGBi input using D-SUB 9 connector, as well as separate Luminance and Chrominance inputs via RCA jacks (which is the same signal as S-Video, just different connectors). I thought this would be a good monitor for my old Bondwell Model 8 computer, which only has CGA output (and probably deserves a post of its own). It would probably also work with my Commodore 64. The Commodore 1901 also has a built-in speaker, that connects with yet another RCA plug, so I wouldn't even need a separate speaker.
@@ -41,7 +39,13 @@ And now, the moment of truth. Would this work? I have an Amiga 600 with a SCART 
 
 {% asset_img SCART_cable_connected.jpg "The colours on the RCA jacks are really confusing. The red and white are not stereo sound, and the yellow one is not composite video. I think that the white one is audio, yellow is luma and red is chroma. " %}
 
-The answer to the last question is yes, it fits. And the answer to rest of the questions are yes, everythings works perfectly! I get a crystal clear image from the amiga, and I get the sound through the speaker! The only thing left to do was to make a hole in the plastic cover as well, which was easy since there was already an indication in the cover where to cut. Here is a picture of the Amiga workbench on the Commodore 1901 monitor:
+The answer to the last question is yes, it fits. And the answer to rest of the questions are yes, everythings works perfectly! I get a crystal clear image from the amiga, and I get the sound through the speaker! The only thing left to do was to make a hole in the plastic cover as well, which was easy since there was already an indication in the cover where to cut.
+
+So, after cutting a hole in the cover, it was just a matter of putting everything back, and look at the nice result:
+
+{% asset_img connector_closeup.jpg "Confusingly, both the red and yellow RCA jacks are marked Chroma. Yellow is Luma, though. " %}
+
+And finally, here is a picture of the Amiga workbench on the Commodore 1901 monitor:
 
 {% asset_img Amiga_Workbench.jpg "Wow, nice moiré patterns! " %}
 
