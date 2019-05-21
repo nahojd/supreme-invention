@@ -4,12 +4,12 @@ author: johan
 date: 2009-11-11 16:42:51
 updated: 2009-11-11 16:42:51
 slug: persistance-in-wf4-beta-2
-tags: [.NET, WF4]
+tags: [.net, WF4]
 ---
 
 Ok, this is my follow-up post to [.Net Framework Profiles](/archive/2009/11/11/.net-framework-profiles.aspx), where I very naïvely though I persistence in WF4 was all about using the correct target framework. As it turned out, they changed the persistence model between beta 1 and beta 2, and the tutorial was apparently written for beta 1.
 
-So here’s my changes to the Microsoft tutorial [How to: Create and Run a Long Running Workflow](http://msdn.microsoft.com/en-us/library/dd489452%28VS.100%29.aspx) in order to [![This works on my machine. It might not work on you rmachine.](/images/johan_driessen_se/WindowsLiveWriter/PersistanceinWF4beta2_E4AD/works-on-my-machine-starburst_thumb.png "This works on my machine. It might not work on you rmachine.")](/images/johan_driessen_se/WindowsLiveWriter/PersistanceinWF4beta2_E4AD/works-on-my-machine-starburst_2.png)make it work for Windows Workflow Foundation 4 beta 2.
+So here’s my changes to the Microsoft tutorial [How to: Create and Run a Long Running Workflow](http://msdn.microsoft.com/en-us/library/dd489452%28VS.100%29.aspx) in order to [![This works on my machine. It might not work on your machine.](/images/johan_driessen_se/WindowsLiveWriter/PersistanceinWF4beta2_E4AD/works-on-my-machine-starburst_thumb.png "This works on my machine. It might not work on your machine.")](/images/johan_driessen_se/WindowsLiveWriter/PersistanceinWF4beta2_E4AD/works-on-my-machine-starburst_2.png)make it work for Windows Workflow Foundation 4 beta 2.
 
 ### The persistence database
 

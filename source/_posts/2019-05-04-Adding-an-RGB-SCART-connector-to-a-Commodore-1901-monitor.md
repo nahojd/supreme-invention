@@ -1,5 +1,7 @@
 ---
 title: Adding an RGB SCART connector to a Commodore 1901 monitor
+categories:
+  - retro computing
 tags:
   - retro computing
 author: johan

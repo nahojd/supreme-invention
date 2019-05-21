@@ -32,7 +32,7 @@ Simply change it to this:
 </None>
 ```
 
-Now, let's move on the real trick. In order to make msbuild transform your config file, we need to att a build event. At the end of the file, add
+Now, let's move on the real trick. In order to make msbuild transform your config file, we need to add a build event. At the end of the file, add
 
 ``` xml
 <UsingTask TaskName="TransformXml"
@@ -58,6 +58,6 @@ In this example, I have a console application, so I want the result of my transf
 
 And if you have more than one config file that you would like transformed, you can of course add several TransformXml-lines. After you're done, just reload the project, and hopefully everything works. At least it works on my machine!
 
-Finally, I should add that I found another Visual Studio extension that seems to work better than SlowCheetah (at least sometimes) called [Configuration Transform](http://visualstudiogallery.msdn.microsoft.com/579d3a78-3bdd-497c-bc21-aa6e6abbc859) and make this entire post unnessecary. On the other hand, this way there is less magic and more control, which I personally like. And if your extension suddenly breaks after an update, it might come handy!
+Finally, I should add that I found another Visual Studio extension that seems to work better than SlowCheetah (at least sometimes) called [Configuration Transform](http://visualstudiogallery.msdn.microsoft.com/579d3a78-3bdd-497c-bc21-aa6e6abbc859) and make this entire post unnecessary. On the other hand, this way there is less magic and more control, which I personally like. And if your extension suddenly breaks after an update, it might come handy!
 
 *UPDATE 2014-03-20 *-- I realised that unless your destination file is included in the project, or rather has a suitable Build Action, it will not be included in the deploy package, or deployed at all. Usually the build action should be "Content". You don't have to worry about the content of the destination file, though, as it will be replaced on every build. I prefer not to have it checked in to source control, though, since it would be pretty pointless to check in every change to an auto-generated file.
