@@ -49,7 +49,7 @@ And finally, here is a picture of the Amiga workbench on the Commodore 1901 moni
 
 {% asset_img Amiga_Workbench.jpg "Wow, nice moiré patterns! " %}
 
-So hooray, everything is great! Except for the crack in the PCB, remember? Since I had the monitor open, and the soldering iron out, I decided to see if I could fix that as well. But I believe this post is long enough already, so that will have to wait until part 2.
+So hooray, everything is great! Except for the crack in the PCB, remember? Since I had the monitor open, and the soldering iron out, I decided to see if I could fix that as well. But I believe this post is long enough already, so that will have to wait until {% post_link Repairing-a-cracked-PCB-in-a-Commodore-1901-monitor 'part 2' %}.
 
 [^1]: The Commodore 1901 monitor was a PAL-only monitor produced between 1986 and 1988, and was meant to be used together with the Commodore 128. It is not as famous as the 1084 monitor but, as we will see, with the SCART modification it is just as useful!
 
