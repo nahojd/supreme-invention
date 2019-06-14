@@ -4,8 +4,8 @@ author: johan
 date: 2019-05-21 15:32:37
 tags:
     - asp.net
+    - dotnet core
     - logging
-    - .net
     - nlog
 ---
 Ever since we started using dotnet core a couple of years ago, both for new projects and porting old projects, we've been struggling with configuration. Especially regarding logging. The official documentation has been -- to put it mildly -- confusing and inconsistent, and to make matters worse, we've been wanting to use [NLog](https://nlog-project.org/) as well. In the old days (e.g. when we used .NET Framework 4.x) using NLog was pretty easy, we just added a NLog configuration section to web.config (or a separate file if we were being fancy), and then just accessed the static instance of NLog with `LogManager.GetCurrentClassLogger()`. This, however, does not work particularly well in dotnet core, for the following reasons:
