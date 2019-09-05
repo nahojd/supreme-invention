@@ -21,4 +21,4 @@ The components are available as NuGet packages:
 
 The source code is available at [our Github account](https://github.com/apprch/adyen-xamarin-android-binding), should you want to build your own components, or maybe fix a bug or two. There is also a Demo app in the github repository, which should help you use the components. So yeah, that's our first official public open source project!
 
-I will publish a follow up shortly where I dwelve a little deeper into the problems I ran into while creating Xamarin Bindings for Android, and how to fix some of them. Stay tuned for that!
+I have published {% post_link Some-Problems-and-Solutions-When-Creating-Xamaring-Android-Bindings 'a follow up post' %} where I dwelve a little deeper into the problems I ran into while creating Xamarin Bindings for Android, and how to fix some of them. So check that out as well, if you're into that kind of stuff!

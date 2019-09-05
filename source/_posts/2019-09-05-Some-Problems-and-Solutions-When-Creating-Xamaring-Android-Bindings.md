@@ -2,10 +2,12 @@
 title: Some Problems and Solutions When Creating Xamaring Android Bindings
 author: johan
 tags:
-    - android
-    - xamarin
-    - adyen
+  - android
+  - xamarin
+  - adyen
+date: 2019-09-05 09:34:07
 ---
+
 
 As announced in {% post_link Announcing-Xamarin-Android-Bindings-for-Adyen-Checkout 'my last post' %}, we recently created Xamarin Bindings for the Adyen Android SDK. In this post, I thought I would share som experiences in creating those bindings, like what I kind of problems we ran into, and how we fixed them.
 
