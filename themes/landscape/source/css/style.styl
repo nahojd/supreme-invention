@@ -37,6 +37,14 @@ body
   font: font-size font-serif
   -webkit-text-size-adjust: 100%
 
+@media (prefers-color-scheme: dark)
+  body
+    background: #000
+    img
+      opacity: 0.75
+    .fancybox-image
+      opacity: 1;
+
 .outer
   clearfix()
   max-width: (column-width + gutter-width) * columns + gutter-width

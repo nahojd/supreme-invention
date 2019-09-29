@@ -36,6 +36,8 @@
   color: color-default
   line-height: line-height-title
   transition: color 0.2s
+  @media (prefers-color-scheme: dark)
+    color: color-grey
   a&:hover
     color: color-link
 
@@ -121,6 +123,8 @@
       width: 100%
       height: 100%
       margin-top: 0
+  @media (prefers-color-scheme: dark)
+    color: color-grey
 
 .article-more-link a
   display: inline-block

@@ -1,5 +1,6 @@
 // https://github.com/chriskempson/tomorrow-theme
 highlight-background = #2d2d2d
+highlight-background-dark = #111;
 highlight-current-line = #393939
 highlight-selection = #515151
 highlight-foreground = #cccccc
@@ -22,6 +23,9 @@ $code-block
   overflow: auto
   color: highlight-foreground
   line-height: font-size * line-height
+  @media (prefers-color-scheme: dark)
+    background: highlight-background-dark
+    border-color: color-default
 
 $line-numbers
   color: #666
@@ -35,6 +39,9 @@ $line-numbers
     background: color-background
     text-shadow: 0 1px #fff
     padding: 0 0.3em
+    @media (prefers-color-scheme: dark)
+      background: #000;
+      text-shadow: 0 1px color-dark-grey;
   pre
     @extend $code-block
     code
