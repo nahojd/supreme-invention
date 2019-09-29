@@ -30,7 +30,7 @@ body {
 
 ```
 
-If the browser does not support prefers-color-scheme, or if it has a preferred color scheme other than "dark" (i.e. light), it will just ignore the overrides in the media query. So this is basically all I needed to do (well, I had to make a [few more changes](https://github.com/nahojd/supreme-invention/commit/b6cad21ee9bbf56171d895a678632616ae79c251)) to make the theme of the site follow the system theme. Sweet!
+If the browser does not support prefers-color-scheme, or if it has a preferred color scheme other than "dark" (i.e. light), it will just ignore the overrides in the media query. So this is basically all I needed to do (well, I had to make a [few more changes](https://github.com/nahojd/supreme-invention/commit/c82cda61f2b9d3421a5f99977db02e6440e0cb49:wq)) to make the theme of the site follow the system theme. Sweet!
 
 [^1]: A smartphone is a computer.
 [^2]: According to [caniuse.com](https://caniuse.com/#feat=prefers-color-scheme)
