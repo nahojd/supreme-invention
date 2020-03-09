@@ -228,6 +228,8 @@ Now you can verify that the games are available. Right click on the desktop (of 
 ## Step 5 - Hardware install
 There is not really much to this, and the video explains it pretty good. Use a CF-IDE adapter of some kind, and connect it to the IDE port of the Amiga. That's it.
 
+_UPDATE:_ When I tried to put the CF card in my Amiga 1200, it didn't recognize it, even though it had worked in my Amiga 600. I thought I had the same CF-IDE adapter, but on closer inspection it turned out they were not exactly the same. They both say __CF-IDE44/2.0 ADAPTER__, but the one that works has version [__V.H2__](https://www.amazon.com/ASHATA-2-5-inch-Compact-Adapter-Support/dp/B07NS9JD6G), while the other one has version [__V.B1__](https://www.amazon.com/SinLoon-Adapter-Memory-2-5-inch-Laptop/dp/B07Y2N2SVD). And it seems that other people have had the same issue with the V.B1. So if you use this kind of CF-IDE adapter, make sure it says V.H2 and _NOT_ V.B1!
+
 Start the Amiga (the real one), and it should boot to your Compact Flash card. Bring up the RUN -> Games menu, and double click a game to start it!
 
 [^1]: Youtube comments are more useful than their reputation would have you believe!
