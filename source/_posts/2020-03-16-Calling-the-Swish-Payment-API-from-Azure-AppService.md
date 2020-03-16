@@ -25,7 +25,7 @@ The _.pfx_ file contains the whole certificate chain, and when working on a Wind
 
 However, you can also do it from the command line with [openssl](https://www.openssl.org/). Now, I'm no expert on openssl, and I'm sure there is a better way to do this, [this answer on the Unix & Linux StackExchange](https://unix.stackexchange.com/a/393484) for example suggests piping the result through `sed`, but we're only doing this once, so this works good enough.
 
-First, list the certs in .pfx file and send the results to a text file[^4]:
+First, list the certs in .pfx file and send the results to a text file[^4].
 
 `openssl pkcs12 -nokeys -info -in ./Swish_Merchant_TestCertificate_1234679304.pfx -passin pass:swish > all_the_certs.txt`
 
