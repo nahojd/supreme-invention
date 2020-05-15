@@ -77,6 +77,14 @@ Now you need to upload the certificates to you App Service in Azure. Log in to y
 
 Select the `Swish_Merchant_TestCertificate_1234679304.pfx` file[^5] and enter the password (which is just _swish_ for the simulator certificate). Click _Upload_ and you should see the certificate in the _Private Key Certificates_ list. If you do this right now, you will also get a warning that the certificate is about to expire, which is true, but there is no newer certs yet, so we'll just have to repeat this process in a month or two.
 
+> _Update 2020-05-15_
+>
+> New certificates for the Swish sandbox finally arrived (mss_test_1.8.1)! I have verified that this exact same 
+> procedure works for them as well. However, they are now issued by Nordea rather than Swedbank, so it would make
+> sense to call the certicates something with Nordea instead! :-)
+>
+> Make sure to change the thumbprints as well!
+
 Next, you need to upload the public CA certs that you extracted earlier. Click on the _Public Key Certificates (.cer)_ tab, and then on _Upload Public Key Certificate_. Select the `Swedbank_Customer_CA1_v1_for_Swish_Test.cer` file, and give it a name, something like `Swedbank Customer CA1 v1 for Swish Test` maybe? Click _Upload_ and to the same for the other certificate.
 
 {% asset_img public_certs_uploaded_to_azure.png %}
