@@ -79,9 +79,7 @@ Select the `Swish_Merchant_TestCertificate_1234679304.pfx` file[^5] and enter th
 
 > _Update 2020-05-15_
 >
-> New certificates for the Swish sandbox finally arrived (mss_test_1.8.1)! I have verified that this exact same 
-> procedure works for them as well. However, they are now issued by Nordea rather than Swedbank, so it would make
-> sense to call the certicates something with Nordea instead! :-)
+> New certificates for the Swish sandbox finally arrived (mss_test_1.8.1)! I have verified that this exact same procedure works for them as well. However, they are now issued by Nordea rather than Swedbank, so it would make sense to call the certicates something with Nordea instead! :-)
 >
 > Make sure to change the thumbprints as well!
 
