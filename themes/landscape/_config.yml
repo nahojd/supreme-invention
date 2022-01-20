@@ -32,7 +32,7 @@ show_count: false
 google_analytics:
 gauges_analytics:
 matomo_analytics_url: alastor.approach.io
-matomo_analytics_site: 1
+matomo_analytics_site: 2
 favicon: /favicon.png
 twitter: nahojd
 google_plus:
