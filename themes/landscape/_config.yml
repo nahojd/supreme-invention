@@ -29,8 +29,10 @@ archive_type: 'yearly'
 show_count: false
 
 # Miscellaneous
-google_analytics: UA-909814-1
+google_analytics:
 gauges_analytics:
+matomo_analytics_url: alastor.approach.io
+matomo_analytics_site: 1
 favicon: /favicon.png
 twitter: nahojd
 google_plus:
