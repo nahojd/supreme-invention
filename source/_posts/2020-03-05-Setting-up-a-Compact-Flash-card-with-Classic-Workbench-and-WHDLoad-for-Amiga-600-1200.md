@@ -37,7 +37,7 @@ You probably want to use the [PFS3](https://en.wikipedia.org/wiki/Professional_F
 
 ### Classic WB
 
-Hard disk images for Classic WB can be found at (classicwb.abime.net)[http://classicwb.abime.net/]. I used the __LITE__ version for the Amiga 1200, but for an Amiga 600 you probably want the __68K__ version.
+Hard disk images for Classic WB can be found at [classicwb.abime.net](http://classicwb.abime.net/). I used the __LITE__ version for the Amiga 1200, but for an Amiga 600 you probably want the __68K__ version.
 
 You will also need kickstart files for WHDLoad. These can be found for example at (paradise.untergrund.net)[https://paradise.untergrund.net/tmp/PREMIUM/amiga_tools/], it's the `kickstarts.lha` file you're looking for.
 
