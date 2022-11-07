@@ -34,8 +34,6 @@ gauges_analytics:
 matomo_analytics_url: alastor.approach.io
 matomo_analytics_site: 2
 favicon: /favicon.png
-twitter: nahojd
-google_plus:
 fb_admins:
 fb_app_id:
 

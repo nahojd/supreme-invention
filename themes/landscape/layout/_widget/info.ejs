@@ -5,19 +5,22 @@
 
         <div class="icons">
             <% if (config.contact.twitter){ %>
-                <a href="https://twitter.com/<%= config.contact.twitter %>"><img src="/css/images/twitter.svg"></a>
+                <a rel="me" title="twitter" href="https://twitter.com/<%= config.contact.twitter %>"><img src="/css/images/twitter.svg"></a>
+            <% } %>
+            <% if (config.contact.mastodon){ %>
+                <a rel="me" title="mastodon" href="https://<%= config.contact.mastodon %>"><img src="/css/images/mastodon.svg"></a>
             <% } %>
             <% if (config.contact.github){ %>
-                <a href="https://github.com/<%= config.contact.github %>"><img src="/css/images/github.svg"></a>
+                <a rel="me" title="github" href="https://github.com/<%= config.contact.github %>"><img src="/css/images/github.svg"></a>
             <% } %>
             <% if (config.contact.linkedin){ %>
-                <a href="https://www.linkedin.com/in/<%= config.contact.linkedin %>"><img src="/css/images/linkedin.svg"></a>
+                <a rel="me" title="linkedin" href="https://www.linkedin.com/in/<%= config.contact.linkedin %>"><img src="/css/images/linkedin.svg"></a>
             <% } %>
             <% if (config.contact.facebook){ %>
-                <a href="https://facebook.com/<%= config.contact.facebook %>"><img src="/css/images/facebook.svg"></a>
+                <a rel="me" title="facebook" href="https://facebook.com/<%= config.contact.facebook %>"><img src="/css/images/facebook.svg"></a>
             <% } %>
             <% if (config.contact.stackoverflow){ %>
-                <a href="https://stackoverflow.com/users/<%= config.contact.stackoverflow %>"><img src="/css/images/overflowing.svg"></a>
+                <a rel="me" title="stackoverflow" href="https://stackoverflow.com/users/<%= config.contact.stackoverflow %>"><img src="/css/images/overflowing.svg"></a>
             <% } %>
         </div>
     </div>

@@ -16,10 +16,10 @@ disqus_shortname: johansblog
 
 contact:
   twitter: nahojd
+  mastodon: mastodon.social/@nahojd
   github: nahojd
   linkedin: johandriessen
   facebook: johan.driessen
-  stackoverflow: 134935/johan-driessen
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
