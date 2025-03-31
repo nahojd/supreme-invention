@@ -15,7 +15,8 @@ author_info: "My name is Johan Driessen. I work as a consultant and developer at
 disqus_shortname: johansblog
 
 contact:
-  twitter: nahojd
+  twitter:
+  bluesky: nahojd.bsky.social
   mastodon: mastodon.social/@nahojd
   github: nahojd
   linkedin: johandriessen

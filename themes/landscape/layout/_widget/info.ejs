@@ -10,6 +10,9 @@
             <% if (config.contact.mastodon){ %>
                 <a rel="me" title="mastodon" href="https://<%= config.contact.mastodon %>"><img style="height: 32px" src="/css/images/mastodon.svg"></a>
             <% } %>
+            <% if (config.contact.bluesky){ %>
+                <a rel="me" title="bluesky" href="https://bsky.app/profile/<%= config.contact.bluesky %>"><img src="/css/images/bluesky.svg"></a>
+            <% } %>
             <% if (config.contact.github){ %>
                 <a rel="me" title="github" href="https://github.com/<%= config.contact.github %>"><img src="/css/images/github.svg"></a>
             <% } %>
