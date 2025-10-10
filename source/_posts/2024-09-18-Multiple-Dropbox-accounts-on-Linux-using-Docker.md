@@ -41,8 +41,8 @@ The `DROPBOX_UID`and `DROPBOX_GID` should match the userid and groupid of your u
 After this, start the container, and start following the logs:
 
 ```bash
-> dropbox compose up -d
-> dropbox logs -f dropbox
+> docker compose up -d
+> docker logs -f dropbox
 ```
 
 The reason why you have to follow the logs is that the container will print a URL that you have to use to connect it to your dropbox account. It will look something like this:
